@@ -11,3 +11,11 @@ from config import *
 tprint         = lambda dic: print(tabulate(dic, headers='keys', tablefmt='psql'))  # print 'dic' with fancy 'psql' form
 list_only_dir  = lambda path: [(join(path, name), name) for name in sorted(os.listdir(path)) if isdir(join(path, name))]
 list_only_file = lambda path: [(join(path, name), name) for name in sorted(os.listdir(path)) if not isfile(join(path, name))]
+
+
+### Path
+class PATH:
+    ROOT   = abspath(dirname(dirname(__file__)))
+    INPUT  = join(ROOT, 'input')
+    OUTPUT = join(ROOT, 'output')
+    SRC    = join(ROOT, 'src')

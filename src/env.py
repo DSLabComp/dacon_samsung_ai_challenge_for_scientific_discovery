@@ -6,7 +6,7 @@
 ### Internal packages
 import sys
 import os
-from os.path import join, isdir, isfile, exists, basename, dirname, split
+from os.path import join, isdir, isfile, exists, basename, dirname, split, abspath
 import datetime
 import joblib
 import json
